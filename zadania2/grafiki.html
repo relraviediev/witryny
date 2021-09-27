@@ -1,0 +1,36 @@
+<html>
+<head>
+<title></title>
+<script language="JavaScript">
+ function okno_zamknij_Tusk() 
+ {
+ window.close()
+ }
+function WinOpen_1()
+{
+window.open("grafika1.html","okienko1","toolbar=no,directories=no,menubar=no,height=250,width=300,top=2000,left=200");
+}
+function WinOpen_2()
+{
+window.open("grafika2.html","okienko2","toolbar=no,directories=no,menubar=no,height=250,width=300,top=1500,left=400" );
+}
+function WinOpen_3()
+{
+window.open("grafika3.html","okienko3","toolbar=no,directories=no,menubar=no,height=250,width=300,top=1000,left=600" );
+}
+function WinOpen_4()
+{
+window.open("grafika4.html","okienko4","toolbar=no,directories=no,menubar=no,height=250,width=300,top=500,left=800");
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" name="przycisk" value="grafika1" onclick="WinOpen_1(' ')">
+<input type="button" name="przycisk" value="grafika2" onclick="WinOpen_2(' ')">
+<input type="button" name="przycisk" value="grafika3" onclick="WinOpen_3(' ')">
+<input type="button" name="przycisk" value="grafika4" onclick="WinOpen_4(' ')">
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Tusk()"/>
+</form>
+</body>
+</html>
