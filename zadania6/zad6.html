@@ -1,6 +1,11 @@
 <html>
 <head>
 <script type="text/javascript">
+function okno_zamknij_Tusk() 
+ {
+ window.close()
+ }
+
 function show_prompt()
 {
 var name=prompt("Napisz imię","Imię Nazwisko");
@@ -10,4 +15,7 @@ document.write("Witaj " + name + "! jak się masz?");
 }
 }
 </script>
+<body>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_Tusk()"/>  
+<body>
 </head>
