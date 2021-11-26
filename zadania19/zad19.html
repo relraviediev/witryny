@@ -1,0 +1,49 @@
+<html> 
+<head> 
+<title>
+</title>
+ <script language="JavaScript">
+function pole(a,b)
+{
+ a_Tus=parseFloat(a)
+ b_Tus=parseFloat(b)
+ pole_tusk=Math.a_Tus*b_Tus
+ document.getElementsByName('pole')[0].value=pole_tusk.toFixed(2); /* na dokument */
+ alert("pole="+pole_tusk.toFixed(2)+" cm^2"); /*do okna Alert */
+ pokaz1.innerHTML="pole="+pole_tusk.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obwod(a,b)
+{
+ a_Tus=parseFloat(a)
+ b_Tus=parseFloat(b)
+  obwod_tusk=Math.a_Tus*2+b_Tus*2
+ document.getElementsByName('obwod')[0].value=obwod_tusk.toFixed(2);
+ alert("obwod="+obwod_tusk.toFixed(2)+" cm");
+ pokaz2.innerHTML="obwod="+obwod_tusk.toFixed(2)+"cm";
+}
+ </script>
+</head> 
+<body> 
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole(this.bok1.value,this.bok2.value); 
+obwod(this.bok1.value,this.bok2.value);return false"> 
+Podaj a=
+<input size="6" name="bok1">
+Podaj b=
+<input size="6" name="bok2">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+pole=
+<input size="6" name="pole">
+obwod=
+<input size="6" name="obwod">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>
