@@ -1,0 +1,33 @@
+
+<html>
+	<head>
+		<title>Zadanie 63</title>
+		<meta charset="utf-8"></meta>
+	</head>
+	<body>
+		<div>
+			<span style="color:green;font-size:20px;">Menu</span><br />
+			<span style="color:red;font-size:20px;">1- Czerwony</span><br />
+			<span style="color:blue;font-size:20px;">2 - Niebieski</span><br /><br />
+ 			<script language="JavaScript">
+			function kolor(liczba){
+ 			if((liczba==1)||(liczba=="czerwony"))
+ 			{
+				document.write("<p style=\"size: 7; color: red;\">wczytałeś kolor czerwony<br></p>");
+			}
+
+ 			if((liczba==2)||(liczba=="niebieski"))
+			{
+				document.write("<p style=\"size: 1; color: blue;\">wczytałeś kolor niebieski<br></p>");}
+			}
+			</script>
+		</div>
+		<form name="formularz" action="..." onsubmit="kolor(this.BOK1.value)">
+			<input size="6" name="BOK1">
+			<input TYPE="submit" Value="Sprawdź" >
+		</form>
+		<table>
+			<tr id="BOK1"></tr>
+		</table>
+	</body>
+</html>

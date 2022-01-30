@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Zadanie 76</title>
+		<meta charset="utf-8"></meta>
+	</head>
+
+	<body>
+		<div style="color:red;font-size:42px;">
+			<script language="JavaScript">
+		  		var a = prompt("Wczytaj pierwszą liczbę: ","");
+				l1_kus = parseFloat(a);
+				var b = prompt("Wczytaj drugą liczbę","");
+				l2_tus = parseFloat(b);
+
+				if(l1_kus<l2_tus)
+				{
+					for(i=0;i<=l2_tus;i++)
+					{
+						if(i%2==1)
+						{
+							document.write("<span style=\"font-size:40px;color:green;\">"+i);
+
+							if(i!=l2_tus-1)
+				  	  		{
+						  		document.write(", </span>");
+							}
+						}
+					}
+				}
+
+				if(l1_kus>l2_tus)
+				{
+					for(i=l1_kus;i>=1;i--)
+					{
+						if(i%2==1)
+						{
+							document.write("<span style=\"font-size:20px;color:blue;\">"+i);
+
+							if(i!=1)
+				  	  		{
+						  		document.write(", </span>");
+							}
+						}
+					}
+				}
+
+				if(l1_kus==l2_tus)
+				{
+					confirm("Brak obliczeń");
+					document.write("Brak obliczeń...");
+				}
+			</script>
+		</div>
+	</body>
+</html>
